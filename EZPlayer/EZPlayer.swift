@@ -280,8 +280,6 @@ open class EZPlayer: NSObject {
 
     open fileprivate(set) var state = EZPlayerState.unknown{
         didSet{
-            printLog("old state: \(oldValue)")
-            printLog("new state: \(state)")
 
             if oldValue != state{
                 
@@ -1166,7 +1164,6 @@ extension EZPlayer {
             if item == self.playerItem {
                 switch keyPath {
                 case "status":
-                    printLog("AVPlayerItem's status is changed: \(item.status)")
                     if item.status == .readyToPlay {
                         let lastState = self.state
                         if self.state != .playing{
@@ -1182,13 +1179,8 @@ extension EZPlayer {
                     }
 
                 case "loadedTimeRanges":
-                    printLog("AVPlayerItem's loadedTimeRanges is changed")
                     (self.controlView as? EZPlayerDelegate)?.player(self, bufferDurationDidChange: item.bufferDuration ?? 0, totalDuration: self.duration ?? 0)
                     self.delegate?.player(self, bufferDurationDidChange: item.bufferDuration ?? 0, totalDuration: self.duration ?? 0)
-                case "playbackBufferEmpty":
-                    printLog("AVPlayerItem's playbackBufferEmpty is changed")
-                case "playbackLikelyToKeepUp":
-                    printLog("AVPlayerItem's playbackLikelyToKeepUp is changed")
                 default:
                     break
                 }

@@ -9,7 +9,7 @@
 import AVFoundation
 public extension AVPlayer {
 
-    /// 观看了的时长（不包括暂停等）
+    
     public var durationWatched: TimeInterval {
         var duration: TimeInterval = 0
         if let events = self.currentItem?.accessLog()?.events {
@@ -20,7 +20,7 @@ public extension AVPlayer {
         return duration
     }
     
-    /// 总时长
+    /// 全持続時間
     public var duration: TimeInterval? {
         if let  duration = self.currentItem?.duration  {
             return CMTimeGetSeconds(duration)
@@ -28,7 +28,7 @@ public extension AVPlayer {
         return nil
     }
     
-    /// 播放进度
+    /// 進捗状況を再生します
     public var currentTime: TimeInterval? {
             return CMTimeGetSeconds(self.currentTime())
     }

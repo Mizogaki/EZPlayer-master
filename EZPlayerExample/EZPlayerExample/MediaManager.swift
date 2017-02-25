@@ -20,6 +20,7 @@ class MediaManager {
 
     }
 
+    // 動画再生
     func playEmbeddedVideo(url: URL, embeddedContentView contentView: UIView? = nil, userinfo: [AnyHashable : Any]? = nil) {
         var mediaItem = MediaItem()
         mediaItem.url = url
@@ -78,8 +79,8 @@ class MediaManager {
     }
     
     @objc  func playerDidPlayToEnd(_ notifiaction: Notification) {
-       //结束播放关闭播放器
-       //self.releasePlayer()
+       // エンドプレイ閉じるプレーヤー
+       self.releasePlayer()
 
     }
 

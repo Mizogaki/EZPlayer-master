@@ -11,13 +11,13 @@ import Foundation
 public typealias Task = (_ cancel : Bool) -> Void
 
 public func delay(_ time: TimeInterval, task: @escaping ()->()) ->  Task? {
+    
+    
 
     func dispatch_later(block: @escaping ()->()) {
         let t = DispatchTime.now() + time
         DispatchQueue.main.asyncAfter(deadline: t, execute: block)
     }
-
-
 
     var closure: (()->Void)? = task
     var result: Task?

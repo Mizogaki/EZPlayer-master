@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951CCEEB1E61754000B6B0E7 /* Alesso - Sweet Escape ft. Sirena.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 951CCEEA1E61754000B6B0E7 /* Alesso - Sweet Escape ft. Sirena.mp4 */; };
 		99145C4F1E15818000891B06 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99145C4E1E15818000891B06 /* Utils.swift */; };
 		99145C521E15862600891B06 /* blackhole.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 99145C501E15862600891B06 /* blackhole.mp4 */; };
-		99145C531E15862600891B06 /* Charlie The Unicorn.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 99145C511E15862600891B06 /* Charlie The Unicorn.m4v */; };
 		9914922B1DDBDA5F005FF2BD /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9914922A1DDBDA5F005FF2BD /* MediaManager.swift */; };
 		9914922D1DDBDF79005FF2BD /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9914922C1DDBDF79005FF2BD /* MediaItem.swift */; };
-		9914922E1DDBF442005FF2BD /* EZPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995E794E1DD9A404006CE7E9 /* EZPlayer.framework */; };
+		9914922E1DDBF442005FF2BD /* EZPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995E794E1DD9A404006CE7E9 /* EZPlayer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		991595E21DE5D97B00D3CA1F /* EZPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 995E794E1DD9A404006CE7E9 /* EZPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		99453E071DE41F5100BBF2FB /* hubblecast.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 99453E061DE41F5100BBF2FB /* hubblecast.m4v */; };
-		99504F811DE6C3BF00E1058D /* testVideo-0.ts in Resources */ = {isa = PBXBuildFile; fileRef = 99504F7E1DE6C3BF00E1058D /* testVideo-0.ts */; };
-		99504F821DE6C3BF00E1058D /* testVideo-1.ts in Resources */ = {isa = PBXBuildFile; fileRef = 99504F7F1DE6C3BF00E1058D /* testVideo-1.ts */; };
-		99504F831DE6C3BF00E1058D /* testVideo.m3u8 in Resources */ = {isa = PBXBuildFile; fileRef = 99504F801DE6C3BF00E1058D /* testVideo.m3u8 */; };
 		995E79381DD9A3CF006CE7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E79371DD9A3CF006CE7E9 /* AppDelegate.swift */; };
 		995E793D1DD9A3CF006CE7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995E793B1DD9A3CF006CE7E9 /* Main.storyboard */; };
 		995E793F1DD9A3CF006CE7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995E793E1DD9A3CF006CE7E9 /* Assets.xcassets */; };
@@ -64,15 +60,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		951CCEEA1E61754000B6B0E7 /* Alesso - Sweet Escape ft. Sirena.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alesso - Sweet Escape ft. Sirena.mp4"; sourceTree = "<group>"; };
 		99145C4E1E15818000891B06 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		99145C501E15862600891B06 /* blackhole.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blackhole.mp4; sourceTree = "<group>"; };
-		99145C511E15862600891B06 /* Charlie The Unicorn.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Charlie The Unicorn.m4v"; sourceTree = "<group>"; };
 		9914922A1DDBDA5F005FF2BD /* MediaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		9914922C1DDBDF79005FF2BD /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
-		99453E061DE41F5100BBF2FB /* hubblecast.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = hubblecast.m4v; sourceTree = "<group>"; };
-		99504F7E1DE6C3BF00E1058D /* testVideo-0.ts */ = {isa = PBXFileReference; lastKnownFileType = file; path = "testVideo-0.ts"; sourceTree = "<group>"; };
-		99504F7F1DE6C3BF00E1058D /* testVideo-1.ts */ = {isa = PBXFileReference; lastKnownFileType = file; path = "testVideo-1.ts"; sourceTree = "<group>"; };
-		99504F801DE6C3BF00E1058D /* testVideo.m3u8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVideo.m3u8; sourceTree = "<group>"; };
 		995E79341DD9A3CF006CE7E9 /* EZPlayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZPlayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995E79371DD9A3CF006CE7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995E793C1DD9A3CF006CE7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,22 +90,10 @@
 		99453E051DE41F5100BBF2FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				99504F7D1DE6C3BF00E1058D /* localm3u8 */,
-				99453E061DE41F5100BBF2FB /* hubblecast.m4v */,
-				99145C511E15862600891B06 /* Charlie The Unicorn.m4v */,
+				951CCEEA1E61754000B6B0E7 /* Alesso - Sweet Escape ft. Sirena.mp4 */,
 				99145C501E15862600891B06 /* blackhole.mp4 */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		99504F7D1DE6C3BF00E1058D /* localm3u8 */ = {
-			isa = PBXGroup;
-			children = (
-				99504F7E1DE6C3BF00E1058D /* testVideo-0.ts */,
-				99504F7F1DE6C3BF00E1058D /* testVideo-1.ts */,
-				99504F801DE6C3BF00E1058D /* testVideo.m3u8 */,
-			);
-			path = localm3u8;
 			sourceTree = "<group>";
 		};
 		995E792B1DD9A3CF006CE7E9 = {
@@ -242,15 +222,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99453E071DE41F5100BBF2FB /* hubblecast.m4v in Resources */,
-				99145C531E15862600891B06 /* Charlie The Unicorn.m4v in Resources */,
 				99145C521E15862600891B06 /* blackhole.mp4 in Resources */,
-				99504F831DE6C3BF00E1058D /* testVideo.m3u8 in Resources */,
 				995E79421DD9A3CF006CE7E9 /* LaunchScreen.storyboard in Resources */,
-				99504F811DE6C3BF00E1058D /* testVideo-0.ts in Resources */,
 				995E793F1DD9A3CF006CE7E9 /* Assets.xcassets in Resources */,
-				99504F821DE6C3BF00E1058D /* testVideo-1.ts in Resources */,
 				995E793D1DD9A3CF006CE7E9 /* Main.storyboard in Resources */,
+				951CCEEB1E61754000B6B0E7 /* Alesso - Sweet Escape ft. Sirena.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,6 @@ import Foundation
 extension URL {
     struct Test {
         //local
-        static let localMP4_1 =  Bundle.main.url(forResource: "blackhole", withExtension: "mp4")!
+        static let localMP4_1 =  Bundle.main.url(forResource: "Alesso - Sweet Escape ft. Sirena", withExtension: "mp4")!
     }
 }

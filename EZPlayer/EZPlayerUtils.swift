@@ -9,29 +9,12 @@
 import UIKit
 import MediaPlayer
 
-// MARK: - 全局变量
+// MARK: - グローバル変数
 
 /// 动画时间
 public var ezAnimatedDuration = 0.3
 
-// MARK: - 全局方法
 
-/// 全局log
-///
-/// - Parameters:
-///   - message: log信息
-///   - file: 打印log所属的文件
-///   - method: 打印log所属的方法
-///   - line: 打印log所在的行
-public func printLog<T>(_ message: T...,
-    file: String = #file,
-    method: String = #function,
-    line: Int = #line)
-{
-    if EZPlayer.showLog {
-    print("EZPlayer Log-->\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
-    }
-}
 
 // MARK: -
 

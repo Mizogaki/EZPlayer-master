@@ -21,7 +21,7 @@ public extension AVPlayerItem {
     }
 
     
-    /// 获取／设置当前subtitle／cc
+    /// subtitle／cc
     public var selectedMediaCharacteristicLegibleOption:AVMediaSelectionOption?{
         get{
             if let legibleGroup = self.asset.mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristicLegible){
@@ -36,7 +36,7 @@ public extension AVPlayerItem {
         }
     }
 
-    /// 获取／设置当前cc
+    /// cc
     public var selectedClosedCaptionOption:AVMediaSelectionOption?{
         get{
             if let option = self.selectedMediaCharacteristicLegibleOption{
@@ -57,7 +57,7 @@ public extension AVPlayerItem {
         }
     }
 
-    /// 获取／设置当前subtitle
+    /// subtitle
     public var selectedSubtitleOption:AVMediaSelectionOption?{
         get{
             if let option = self.selectedMediaCharacteristicLegibleOption{
@@ -78,7 +78,7 @@ public extension AVPlayerItem {
         }
     }
 
-    /// 获取／设置当前audio
+    /// audio
     public var selectedMediaCharacteristicAudibleOption:AVMediaSelectionOption?{
         get{
             if let group = self.asset.mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristicAudible){
