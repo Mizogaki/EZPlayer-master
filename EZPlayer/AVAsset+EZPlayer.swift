@@ -6,12 +6,23 @@
 //  Copyright © 2016年 yangjun zhu. All rights reserved.
 //
 
+
+///
+/// おそらく今回のアプリでは使わない想定です。
+///
+
+
 import AVFoundation
 public extension AVAsset {
 
+    // タイトル取得 ???
+    // https://developer.apple.com/reference/avfoundation/avmetadataitem
     public var title: String? {
+        
+        
         var error: NSError?
         let status = self.statusOfValue(forKey: "commonMetadata", error: &error)
+        
         if error != nil {
             return nil
         }
@@ -19,13 +30,16 @@ public extension AVAsset {
             let metadataItems = AVMetadataItem.metadataItems(from: self.commonMetadata, withKey: AVMetadataCommonKeyTitle, keySpace: AVMetadataKeySpaceCommon)
             if metadataItems.count > 0  {
                 let titleItem = metadataItems.first
+                
+                print(titleItem!)
+                
                 return titleItem?.value as? String
             }
         }
         return nil
     }
 
-    /// cc
+    /// cc 字幕 ???
     public var closedCaption: [AVMediaSelectionOption]? {
         var closedCaptions = [AVMediaSelectionOption]()
         if let mediaSelectionGroup = self.mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristicLegible){
@@ -36,6 +50,9 @@ public extension AVAsset {
             }
         }
         if closedCaptions.count > 0{
+            
+            print(closedCaptions)
+            
             return closedCaptions
         }
         return nil
@@ -54,6 +71,9 @@ public extension AVAsset {
             }
         }
         if subtitles.count > 0{
+            
+            print(subtitles)
+            
             return subtitles
         }
         return nil
@@ -69,6 +89,9 @@ public extension AVAsset {
                 }
             }
             if audios.count > 0{
+                
+                print(audios)
+                
                 return audios
             }
         }
@@ -92,6 +115,9 @@ public extension AVAsset {
                 title = metadataItems[0].stringValue
             }
         }
+        
+        print(title!)
+        
         return title
     }
 

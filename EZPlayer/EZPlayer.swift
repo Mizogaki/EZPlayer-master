@@ -11,18 +11,13 @@ import AVFoundation
 
 
 public protocol EZPlayerDelegate : class {
+    
     func player(_ player: EZPlayer ,playerStateDidChange state: EZPlayerState)
     func player(_ player: EZPlayer ,playerDisplayModeDidChange displayMode: EZPlayerDisplayMode)
-
     func player(_ player: EZPlayer ,playerControlsHiddenDidChange controlsHidden: Bool , animated: Bool)
-
-
-
     func player(_ player: EZPlayer ,bufferDurationDidChange  bufferDuration: TimeInterval , totalDuration: TimeInterval)
     func player(_ player: EZPlayer , currentTime   : TimeInterval , duration: TimeInterval)
     func playerHeartbeat(_ player: EZPlayer )
-
-    //    func bmPlayer(player: BMPlayerLayerView ,playerIsPlaying      playing: Bool)
     func player(_ player: EZPlayer ,showLoading: Bool)
 
 
@@ -492,10 +487,6 @@ open class EZPlayer: NSObject {
             }
             return
         }
-        
-   
-
-
     }
 
 

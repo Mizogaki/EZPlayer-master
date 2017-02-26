@@ -9,17 +9,16 @@
 import UIKit
 import MediaPlayer
 
-// MARK: - グローバル変数
 
-/// 动画时间
+
+// MARK: - グローバル変数
 public var ezAnimatedDuration = 0.3
 
 
 
-// MARK: -
 
-/// EZPlayerState的相等判断
-///
+/// EZPlayerStateを比較するため　==
+
 /// - Parameters:
 ///   - lhs: 左值
 ///   - rhs: 右值
@@ -40,8 +39,8 @@ public func ==(lhs: EZPlayerState, rhs: EZPlayerState) -> Bool {
     }
 }
 
-/// EZPlayerState的不相等判断
-///
+/// EZPlayerState　!=
+/// オリジナルの比較メソッド
 /// - Parameters:
 ///   - lhs: 左值
 ///   - rhs: 右值
@@ -49,6 +48,9 @@ public func ==(lhs: EZPlayerState, rhs: EZPlayerState) -> Bool {
 public func !=(lhs: EZPlayerState, rhs: EZPlayerState) -> Bool {
     return !(lhs == rhs)
 }
+
+
+
 
 // MARK: - 辅助方法
 public class EZPlayerUtils{
